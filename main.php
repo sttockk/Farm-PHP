@@ -139,12 +139,12 @@ $productHouse = new ProductHouse();
 $farm = new Farm($productHouse);
 
 
-// creating chickens
+// creating cows
 for($i=1;$i<=$animalHouse->cows;$i++){
     $farm->addAnimals(AnimalFactory::createCow());
 }
 
-//creating cows
+// creating chickens
 for($i=1;$i<=$animalHouse->chickens;$i++)
 {
     $farm->addAnimals(AnimalFactory::createChicken());
